@@ -17,7 +17,7 @@
 <body>
 <main>
 <h1>Suzu Pop! — Privacy Policy</h1>
-<p class="muted">Last updated: 26 November 2026 (rev. 3)</p>
+<p class="muted">Last updated: 27 November 2026 (rev. 5)</p>
 
 <p>Suzu Pop! ("the game") is made by Alperen Korkmaz, an independent developer ("I", "me"). This page explains what data the game and the services it uses handle, why, and what you can do about it. Contact: <a href="mailto:support.alperen@gmail.com">support.alperen@gmail.com</a>.</p>
 
@@ -29,20 +29,23 @@
 <li>The game sends gameplay statistics and crash reports to Google Firebase. In the EU, the UK and Switzerland this happens only if you agree in Google's consent form.</li>
 <li>The game shows ads from Google AdMob and Unity Ads: a small banner on the menu, and video ads you can choose to watch for a reward. Ad services collect device data, including your advertising ID.</li>
 <li>Purchases go through Google Play. The game never sees your payment details.</li>
+<li>Daily reminders are optional and are scheduled on your phone; no server sends them.</li>
+<li>Where the law requires Google Play to share an age range (for example California, Brazil and Texas), the game reads it on your phone only to adjust ads and purchases for younger players. It is never sent anywhere.</li>
 </ul>
 </div>
 
 <h2>1. Data that stays on your phone</h2>
 <ul>
-<li>your settings (music and sound volume, vibration, chosen music and colours);</li>
+<li>your settings (music and sound volume, vibration, reduce motion, daily reminder on/off and time, chosen music and colours);</li>
 <li>your progress: best score, stars, unlocked outfits and backgrounds, daily puzzle results and streak, and purchased items;</li>
-<li>the game in progress, so you can continue where you left off.</li>
+<li>the game in progress, so you can continue where you left off;</li>
+<li>if Google Play shared one, your age range (section 8). It is kept in a separate file that is not included in the backup.</li>
 </ul>
 <p>If backup is turned on in your phone's settings, Android may copy your progress and the game in progress to your Google account backup, so they come back on a new phone. Nothing else from the game goes into that backup.</p>
 
 <h2>2. Gameplay statistics and crash reports</h2>
 <p>The game uses Google Firebase Analytics and Firebase Crashlytics to understand how the game is played, to balance it and to fix crashes.</p>
-<p><strong>When:</strong> in the European Economic Area, the UK and Switzerland, only if you have agreed in Google's consent form (you can change your choice in Settings → Privacy choices). Everywhere else, including Türkiye, it is part of how the game works. If you don't want it, email me (section 9).</p>
+<p><strong>When:</strong> in the European Economic Area, the UK and Switzerland, only if you have agreed in Google's consent form (you can change your choice in Settings → Privacy choices). Everywhere else, including Türkiye, it is part of how the game works. If you don't want it, email me (section 10).</p>
 <p><strong>What:</strong></p>
 <ul>
 <li>game events: starting and finishing the tutorial, starting and ending a game (mode, result, score, number of trays, play time, parties, whether you continued, how many games you have played), the daily puzzle, opening the Wardrobe or the Shop, unlocking an outfit, and the result of a purchase;</li>
@@ -59,7 +62,7 @@
 <p>Outside the European Economic Area, the UK and Switzerland, the game downloads game settings from Google Firebase Remote Config at most twice a day, so the game can be tuned without an update. For this, Firebase receives an installation ID it creates, the app version and basic device information. No game events are sent with it.</p>
 
 <h2>4. Advertising</h2>
-<p>Ads are served by Google AdMob (Google LLC), which also lets Unity Ads (Unity Technologies) bid to show an ad. The game shows a small banner on the menu and, if you choose, a video ad to continue a game or to double the stars you earned. Players who buy "No Ads" see no ads.</p>
+<p>Ads are served by Google AdMob (Google LLC), which also lets Unity Ads (Unity Technologies) bid to show an ad. The game shows a small banner on the menu and, if you choose, a video ad to continue a game or to double the stars you earned. Players who buy "No Ads" see no ads, and the game requests no ads at all for players whom Google Play identifies as under 13 (section 8).</p>
 <p>Ad services receive:</p>
 <ul>
 <li>your device's advertising ID and app set ID;</li>
@@ -67,31 +70,51 @@
 <li>device and app information;</li>
 <li>ad interactions (ads loaded, shown, watched or tapped) and diagnostics.</li>
 </ul>
-<p><strong>Personalized ads:</strong> in the EEA, the UK and Switzerland, Google's consent form asks for your permission first. In US states with privacy laws, you can opt out of the sale or sharing of your data in Settings → Privacy choices. The row appears only where these choices apply. You can reset or delete your advertising ID in your phone's settings.</p>
+<p><strong>Personalized ads:</strong> in the EEA, the UK and Switzerland, Google's consent form asks for your permission first. In US states with privacy laws, you can opt out of the sale or sharing of your data in Settings → Privacy choices. The row appears only where these choices apply. In Brazil, the game asks its ad services for non-personalized ads only. Google AdMob applies this request. The game passes the same request on to the other ad networks (Unity Ads), but whether they apply it depends on each network's own settings. You can reset or delete your advertising ID in your phone's settings.</p>
 <p>How these services use data: Google — <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>, <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>; Unity — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">unity.com/legal/game-player-and-app-user-privacy-policy</a>.</p>
 
 <h2>5. In-app purchases</h2>
-<p>Purchases are made through Google Play. The game never sees your payment details. It checks Google's receipt on your phone and saves only which items you own; the receipt and the purchase token are not saved.</p>
+<p>Purchases are made through Google Play. The game never sees your payment details. It checks Google's receipt on your phone and saves only which items you own; the receipt and the purchase token are not saved. Purchases with real money are turned off for players whom Google Play identifies as under 13.</p>
 <p>The purchasing library the game uses (Unity In-App Purchasing, Unity Technologies) sends purchase events to Unity: when a purchase starts, succeeds or fails, with the product, a transaction ID, basic device information and a session ID. Unity processes this data on the game's behalf; it is sent regardless of your ad consent choices, which only affect advertising identifiers.</p>
 
 <h2>6. Sharing</h2>
 <p>Share on the daily puzzle creates a short text with your result and passes it to the app you choose. Nothing is sent unless you send it.</p>
 
-<h2>7. Children</h2>
-<p>The game is for players aged 13 and over and is not designed for children. The game does not ask your age. I do not knowingly collect personal information from children under 13. Parents can contact me at <a href="mailto:support.alperen@gmail.com">support.alperen@gmail.com</a>.</p>
+<h2>7. Notifications, ratings and updates</h2>
+<p><strong>Daily reminder:</strong> after your first daily puzzle the game asks whether you want a daily reminder. If you agree (and allow notifications on Android), the reminder is scheduled on your phone; no server is involved and nothing is sent. You can turn it off in Settings → Reminders or in your phone's notification settings. If Google Play identifies you as under 13 (section 8), the game never asks and never schedules a reminder.</p>
+<p><strong>Ratings:</strong> the game may show Google Play's own rating card after a good moment, such as a new best score. Your rating goes directly to Google Play under Google's terms; the game does not receive it or know whether you rated.</p>
+<p><strong>Updates:</strong> when a new version is available, Google Play may offer it inside the game and download it in the background. This is handled by Google Play.</p>
 
-<h2>8. Where data is processed</h2>
+<h2>8. Children and age signals</h2>
+<p>The game is for players aged 13 and over and is not designed for children. The game does not ask your age. I do not knowingly collect personal information from children under 13. Parents can contact me at <a href="mailto:support.alperen@gmail.com">support.alperen@gmail.com</a>.</p>
+<p>Where the law requires app stores to share an age range with apps (for example California and Brazil from January 2027, and Texas), the game asks Google Play for it when it starts. Google Play provides only an age range (such as 13–15 or 18+), never a birth date. The game uses it only to provide an age-appropriate experience: if the range is under 13, the game shows no ads, sends no gameplay statistics or crash reports, never asks about daily reminders, and turns off purchases with real money. If the range arrives while the game is already running, gameplay statistics stop right away and crash reports stop from the next time the game starts. The age range stays on your phone; it is not sent to me, to the ad services or to Firebase. Outside these regions the game does not ask Google Play for an age range.</p>
+
+<h2>9. Where data is processed</h2>
 <p>Google and Unity may process data in countries other than yours, including the United States, under their own safeguards.</p>
 
-<h2>9. Keeping and deleting your data, and your rights</h2>
+<h2>10. Keeping and deleting your data, and your rights</h2>
 <p>The game has no account and does not show any ID to you, so I cannot link data held by Firebase or Unity to a specific player, and I cannot delete it on request. Instead, it is deleted automatically: event data after 2 months (only aggregated statistics without any ID remain) and crash reports after 90 days (section 2). Uninstalling the game deletes the data on your phone. Data held by the ad services: use the links in section 4.</p>
 <p>Depending on where you live (for example under the GDPR, or Türkiye's KVKK), you may have the right to access or delete your data, to object to or restrict its use, and to withdraw consent. Email <a href="mailto:support.alperen@gmail.com">support.alperen@gmail.com</a>; I will reply within 30 days.</p>
 
-<h2>10. Security</h2>
+<h2>11. Security</h2>
 <p>The services above send data over encrypted connections (HTTPS).</p>
 
-<h2>11. Changes</h2>
+<h2>12. Changes</h2>
 <p>If this policy changes, the new version will be published on this page with a new date.</p>
+
+<section id="kvkk" lang="tr">
+<h2>KVKK Aydınlatma Metni (Türkçe)</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 10. maddesi uyarınca:</p>
+<ul>
+<li><strong>Veri sorumlusu:</strong> Alperen Korkmaz (bağımsız geliştirici). İletişim: <a href="mailto:support.alperen@gmail.com">support.alperen@gmail.com</a>.</li>
+<li><strong>İşlenen veriler:</strong> oyun olayları (oyun başlangıcı ve sonu, mod, skor, tepsi sayısı, süre, öğretici, günlük bulmaca, gardırop ve mağaza açılışları, satın alma sonucu), cihaz modeli ve kare hızı, cihaz ve uygulama bilgisi, Firebase'in oluşturduğu uygulama kimliği, IP adresinden çıkarılan ülke, oyunun oluşturduğu rastgele kurulum kimliği ve çökme raporları; satın alma bilgisi (ürün, işlem kimliği); reklam hizmetlerince işlenen reklam kimliği, IP adresi, cihaz bilgisi ve reklam etkileşimleri. Ad, e-posta, telefon ya da hesap bilgisi toplanmaz. Ayarlar, ilerleme, hatırlatma tercihi ve (yasa gerektiren bölgelerde Google Play'in paylaştığı) yaş aralığı yalnız telefonda kalır, veri sorumlusuna aktarılmaz.</li>
+<li><strong>Amaçlar:</strong> oyunun sağlanması, dengelenmesi ve iyileştirilmesi, hataların giderilmesi, satın almaların sağlanması, ödüllü reklamların ve menü bandının gösterilmesi ve ölçülmesi.</li>
+<li><strong>Toplama yöntemi ve hukuki sebep:</strong> veriler oyun ve içindeki yazılımlar (Google Firebase, Google AdMob, Unity Ads, Unity In-App Purchasing, Google Play) aracılığıyla otomatik yolla toplanır. Hukuki sebepler: satın almaların sağlanması için bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması (m.5/2-c); oyunun iyileştirilmesi ve hataların giderilmesi için oyun istatistikleri ve çökme raporlarında, temel hak ve özgürlüklerine zarar vermemek kaydıyla meşru menfaat (m.5/2-f); ödüllü reklamların ve menü bandının gösterilmesi ve dolandırıcılığın önlenmesi için, temel hak ve özgürlüklerine zarar vermemek kaydıyla meşru menfaat (m.5/2-f). İtiraz için <a href="mailto:support.alperen@gmail.com">support.alperen@gmail.com</a> adresine yazabilirsin.</li>
+<li><strong>Saklama:</strong> oyun olayları 2 ay, çökme raporları 90 gün sonra kendiliğinden silinir; sonra yalnız hiçbir kimliğe bağlı olmayan toplu istatistikler kalır. Oyunu kaldırmak telefondaki verileri siler.</li>
+<li><strong>Aktarım:</strong> veriler hizmet sağlayıcılara (Google LLC: Firebase, AdMob, Google Play; Unity Technologies: Unity Ads, Unity In-App Purchasing) ve onların Türkiye dışındaki (ABD dahil) sunucularına aktarılır. Aktarım, hizmet sağlayıcıların sözleşmesel güvenceleriyle yapılır; sağlayıcılar Kurul'un ilan ettiği standart sözleşmeyi sunduğunda imzalanıp Kurul'a bildirilir.</li>
+<li><strong>Hakların (m.11):</strong> kişisel verinin işlenip işlenmediğini öğrenme, bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, aktarıldığı üçüncü kişileri bilme, eksik ya da yanlış işlenmişse düzeltilmesini, silinmesini ya da yok edilmesini isteme, bu işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme, otomatik sistemlerle analiz edilmesi sonucunda aleyhine bir sonuç çıkmasına itiraz etme, kanuna aykırı işleme nedeniyle zarara uğrarsan zararın giderilmesini talep etme. Oyunda hesap olmadığı ve sana bir kimlik gösterilmediği için verileri tek bir oyuncuya bağlayamıyorum; bu yüzden silme, kendiliğinden silme süreleriyle (yukarıda) yapılır. Başvuru: <a href="mailto:support.alperen@gmail.com">support.alperen@gmail.com</a>; 30 gün içinde cevap veririm.</li>
+</ul>
+</section>
 </main>
 </body>
 </html>
